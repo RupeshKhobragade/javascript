@@ -1,0 +1,86 @@
+
+
+question no. 24 and 25
+
+<script type="text/javascript">
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+   
+  document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
+ 
+  </script>
+
+
+
+
+question no. 18
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voting</title>
+</head>
+<body>
+<form>
+  <input type="number" id="age">
+  <input type="button" value="Check" onclick="voting()">
+  <div id="out"></div>
+  <script type="text/javascript">
+    function voting()
+    {
+      var age =parseInt(document.getElementById('age').value);
+      if(age>=18)
+      {
+        document.getElementById('out').innerHTML= "Eligible";
+      }
+      else
+      {
+        document.getElementById('out').innerHTML="Not Eligible";
+      }
+    } 
+  </script>
+</body>
+</html>
+
+
+question no. 21 and 22
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array</title>
+</head>
+<body>
+  <div id="output"></div>
+  <script type="text/javascript">
+    var data = new Array();
+    var data2 = new Array();
+    data2 = "SBJain";
+    alert(data2[5]);
+    data[0] = "My Name is\n";
+    data[1] = "Programming Language\n";
+    data[2] = "S B Jain Institute\n";
+    data[3] = "Welcome to happiness\n";
+    data[4] = "keep smiling!";
+    var d="";
+    var colors = new Array("red","green","pink","orange","magenta");
+
+
+
+    for(var i=0;i<4;i++)
+    {
+      d +="<p style='color:"+colors[i]+"'>"+data[i] + "</p>";
+    }
+    document.getElementById('output').innerHTML = d;
+    document.write(data)
+    alert(data);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>promt</title>
+</head>
+<body>
+	<div id="amit"></div>
+	<script type="text/javascript">
+		var num = parseInt(prompt("enter your no."));
+		
+		var whileData ="";
+		for (r=0;r<=num;r++;) {
+			if (r%2==0) {
+				whileData += "<span style='color:red;'> Even no.:";
+				whileData += r;
+				whileData += "</span><br>";
+
+			}
+			else {
+				whileData += "<span style='color:green;'> odd no.:"
+				whileData += r;
+				whileData += "</span><br>";
+
+			}
+			
+		}
+		document.getElementById('amit').innerHTML = "         "+whileData;
+	</script>
+
+</body>
+</html>
